@@ -39,7 +39,7 @@ dl-assignment1/
 
 ### Installation
 ```bash
-git clone https://github.com/da24m025/dl-assignment1.git
+git clone https://github.com/da24m025/da6401_assignment1.git
 cd dl-assignment1
 pip install -r requirements.txt
 wandb login  # Enter API key when prompted
