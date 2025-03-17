@@ -5,7 +5,8 @@ This repository implements a feedforward neural network trained with backpropaga
 ## Submission Details
 - **Zip File**: `A1_<ROLL_NUMBER>.zip` 
 - **WandB Report**: [View Report](https://wandb.ai/da24m025-iit-madras/fashion-mnist-optimizers/reports/DA6401-Assignment-1-Report--VmlldzoxMTcwNjUwMQ)
-- I'm unable to give public access of my Project Wandb Report , nor am i able to invite people to give access, I instead added TA Mr Siva Sankar S ch20b103@smail.iitm.ac.in as collaborator to the team as full Admin as suggested by him, If any other TA is grading my assignment please mail me at da24m025@smail.iitm.ac.in, so that i will be able to add you to the project team. Thank you.
+- **Wandb Report**: [Drive Link](https://drive.google.com/file/d/17Kjfs61qv9R2Tsqmdv3WkfMLrmR9opZS/view?usp=sharing)
+- I'm unable to give public access of my Project Wandb Report , nor am i able to invite people to give access, I instead added TA Mr Siva Sankar S ch20b103@smail.iitm.ac.in as collaborator to the team as full Admin as suggested by him, If any other TA is grading my assignment please mail me at da24m025@smail.iitm.ac.in, so that i will be able to add you to the project team. I'm also attaching G drive link of pdf format of Report. Thank you.
 - **GitHub Repository**: [View Repo](https://github.com/da24m025/da6401_assignment1) 
 
 
