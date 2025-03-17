@@ -153,17 +153,3 @@ keras>=2.4.0
 
 ---
 
-### Steps to Finalize the README
-1. **Replace Placeholder Links**:
-   - Update the Wandb report link and GitHub repository link with actual URLs after setting up your project. Create a Wandb report in the `fashion-mnist-classification` or `fashion-mnist-optimizers` project, summarizing your experiments, and copy the link.
-2. **Replace Roll Number**:
-   - Update `A1_DA24M025.zip` with your actual roll number.
-3. **Upload to GitHub**:
-   - Create a repository named `dl-assignment1` (or similar).
-   - Add all files (`q1_visualization.py`, `q2_feedforward.py`, `q3_optimizers.py`, `q4_sweep.py`, `train.py`, `requirements.txt`, `README.md`) with a commit history reflecting your work progression.
-   - Push to GitHub and ensure it’s public or accessible to the TA.
-4. **Create the Zip File**:
-   - Zip the repository contents (excluding `.git`) into `A1_DA24M025.zip`.
-   - Submit on Gradescope as instructed.
-
-This `README.md` provides a comprehensive overview, meeting all assignment requirements while ensuring clarity and reproducibility. Let me know if further adjustments are needed!
