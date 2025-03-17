@@ -89,52 +89,11 @@ python q4_sweep.py
 The sweep explores epochs (5, 10), hidden layers (3, 4, 5), hidden size (32, 64, 128), weight decay (0, 0.0005, 0.5), learning rate (1e-3, 1e-4), optimizer (sgd, momentum, nesterov, rmsprop, adam, nadam), batch size (16, 32, 64), weight initialization (random, xavier), and activation (sigmoid, tanh, relu). Results are logged to the `fashion-mnist-optimizers` project with meaningful run names (e.g., `hl_5_hs_128_bs_64_ac_tanh`).
 
 #### Train with Recommended Configuration
-Based on the sweep, the best configuration (5 hidden layers, 128 neurons, `nadam`, `tanh`, batch size 64, learning rate 0.001, Xavier initialization, no weight decay) can be run using:
+Based on the sweep, the best configuration (3 hidden layers, 128 neurons, `nadam`, `tanh`, batch size 64, learning rate 0.001, Xavier initialization, no weight decay) can be run using:
 ```bash
 python train.py --wandb_entity da24m025-iit-madras --wandb_project fashion-mnist-optimizers --dataset fashion_mnist --epochs 10 --batch_size 64 --optimizer nadam --learning_rate 0.001 --num_layers 5 --hidden_size 128 --weight_decay 0 --weight_init xavier --activation tanh --beta1 0.9 --beta2 0.999 --eps 1e-8
 ```
-**Validation Accuracy**: 89.47%  
-**Validation Loss**: 0.3178
 
-## Experiment Results
-
-### Question 4 Sweep Results
-The best configuration from the sweep:
-- **Activation**: `tanh`
-- **Batch Size**: 64
-- **Epochs**: 10
-- **Hidden Layers**: 5
-- **Hidden Size**: 128
-- **Learning Rate**: 0.001
-- **Optimizer**: `nadam`
-- **Weight Decay**: 0
-- **Weight Initialization**: `xavier`
-- **Validation Accuracy**: 89.47%
-- **Validation Loss**: 0.3178
-
-### Question 6 Insights
-- **Activation Functions**: `tanh` (purple lines) outperforms `sigmoid` (yellow lines) due to stable gradients, while `ReLU` shows variability due to the dying neuron issue.
-- **Learning Rate**: Low rates (0.0001–0.0005) enhance stability; 0.001 (baseline) risks overshooting but still performs well.
-- **Batch Size**: Moderate sizes (32–50) improve generalization; 64 (baseline) may reduce noise excessively.
-- **Optimizers**: `nadam` and `adam` (purple lines) offer stable convergence, while `sgd` and `rmsprop` (yellow lines) are less consistent.
-- **Recommendation for 95% Accuracy**: Use `tanh` activation, batch size 32, 5 hidden layers, 128 neurons, learning rate 0.0005, `nadam` optimizer, no weight decay, and Xavier initialization.
-
-### MNIST Recommendations (Based on Fashion-MNIST Learnings)
-Leveraging Fashion-MNIST insights, three configurations were tested on MNIST:
-1. **Configuration 1**: 3 hidden layers, `nadam`, `tanh`  
-   - Command: `python train.py --wandb_entity da24m025-iit-madras --wandb_project DL --dataset mnist --epochs 10 --batch_size 32 --optimizer nadam --learning_rate 0.0005 --num_layers 3 --hidden_size 128 --weight_decay 0 --weight_init xavier --activation tanh --beta1 0.9 --beta2 0.999 --eps 1e-8`  
-   - **Test Accuracy**: 97.78%  
-   - **Analysis**: A shallow network excels on MNIST’s simpler patterns.
-2. **Configuration 2**: 3 hidden layers, `nadam`, `ReLU`  
-   - Command: `python train.py --wandb_entity da24m025-iit-madras --wandb_project DL --dataset mnist --epochs 10 --batch_size 32 --optimizer nadam --learning_rate 0.0005 --num_layers 3 --hidden_size 128 --weight_decay 0 --weight_init xavier --activation ReLU --beta1 0.9 --beta2 0.999 --eps 1e-8`  
-   - **Test Accuracy**: 97.65%  
-   - **Analysis**: `ReLU` offers efficiency with near-identical performance.
-3. **Configuration 3**: 5 hidden layers, `adam`, `tanh`  
-   - Command: `python train.py --wandb_entity da24m025-iit-madras --wandb_project DL --dataset mnist --epochs 10 --batch_size 32 --optimizer adam --learning_rate 0.0005 --num_layers 5 --hidden_size 128 --weight_decay 0 --weight_init xavier --activation tanh --beta1 0.9 --beta2 0.999 --eps 1e-8`  
-   - **Test Accuracy**: 97.49%  
-   - **Analysis**: Deeper network with `adam` lags slightly.
-
-**Conclusion**: Configuration 1 (97.78%) is recommended for MNIST, with Configuration 2 as an efficient alternative.
 
 ## Dependencies
 The `requirements.txt` file includes:
