@@ -24,6 +24,7 @@ dl-assignment1/
 ├── train.py                   # Main training script with CLI arguments
 ├── requirements.txt           # Required dependencies
 └── README.md                  # Documentation
+
 ```
 
 ---
