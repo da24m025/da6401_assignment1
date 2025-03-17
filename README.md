@@ -22,8 +22,7 @@ dl-assignment1/
 ├── q4_sweep.py                # Hyperparameter tuning with WandB
 ├── q7_confusion_matrix.py     # Generates confusion matrix & test accuracy
 ├── q8_loss_comparison.py      # Compares cross-entropy vs. squared error loss
-├── train.py                   # Main training script with CLI arguments
-├── requirements.txt           # Required dependencies
+├── train.py                   # Main training script with CLI arguments           
 └── README.md                  # Documentation
 
 ```
@@ -40,8 +39,8 @@ dl-assignment1/
 ### Installation
 ```bash
 git clone https://github.com/da24m025/da6401_assignment1.git
-cd dl-assignment1
-pip install -r requirements.txt
+cd da6401_assignment1
+
 wandb login  # Enter API key when prompted
 ```
 
