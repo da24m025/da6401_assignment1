@@ -6,7 +6,7 @@
 This repository contains the implementation of a feedforward neural network with backpropagation and various gradient descent optimizers (SGD, Momentum, Nesterov, RMSProp, Adam, Nadam) for classifying the Fashion-MNIST dataset. The project leverages Wandb for experiment tracking, hyperparameter sweeps, and result visualization, fulfilling the assignment's dual goals of implementation and tool familiarity.
 
 ## Submission Details
-- **Zip File**: `A1_DA24M025.zip` (replace `DA24M025` with your actual roll number)
+- **Zip File**: `A1_DA24M025.zip` 
 - **Wandb Report**: [Wandb Report](https://wandb.ai/da24m025-iit-madras/fashion-mnist-optimizers/reports/DA6401-Assignment-1-Report--VmlldzoxMTcwNjUwMQ)
 - **GitHub Repository**: [GitHub Repo](https://github.com/da24m025/da6401_assignment1) 
 
