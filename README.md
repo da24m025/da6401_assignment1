@@ -7,8 +7,8 @@ This repository contains the implementation of a feedforward neural network with
 
 ## Submission Details
 - **Zip File**: `A1_DA24M025.zip` (replace `DA24M025` with your actual roll number)
-- **Wandb Report**: [Link to Wandb Report](https://wandb.ai/da24m025-iit-madras/fashion-mnist-optimizers/reports/DA6401-Assignment-1-Report--VmlldzoxMTcwNjUwMQ) *(Note: Replace with the actual Wandb report link after creating it in your Wandb dashboard)*
-- **GitHub Repository**: [Link to GitHub Repo](https://github.com/da24m025/da6401_assignment1) 
+- **Wandb Report**: [Wandb Report](https://wandb.ai/da24m025-iit-madras/fashion-mnist-optimizers/reports/DA6401-Assignment-1-Report--VmlldzoxMTcwNjUwMQ)
+- **GitHub Repository**: [GitHub Repo](https://github.com/da24m025/da6401_assignment1) 
 
 
 ## Code Organization
